@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Health Workforce & SDG Progress Analysis | Rui Ma</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo"><a href="/">Rui Ma</a></div>
+    <nav>
+      <a href="/#projects">Projects</a>
+      <a href="/#about">About</a>
+      <a href="/#contact">Contact</a>
+      <a class="resume-button" href="#">Resume</a>
+    </nav>
+  </header>
+
+  <main class="project-page">
+    <section class="project-hero">
+      <a class="back-link" href="/#projects">← Back to projects</a>
+      <p class="eyebrow blue">Python · Public Data · Data Wrangling · Policy Analytics · Web Scraping</p>
+      <h1>Global Health Workforce & SDG Progress Analysis</h1>
+      <p class="project-subtitle">
+        Combined public datasets from the UN, WHO, World University Rankings, and Worldometer
+        to explore how healthcare workforce density, economic development, and tertiary education
+        relate to health outcomes across countries.
+      </p>
+
+      <div class="project-actions">
+        <a class="primary-button blue-button" href="/files/global-health-workforce-presentation.pdf">Download Presentation</a>
+        <a class="secondary-button" href="/files/global-health-workforce-notebook.ipynb">View Notebook</a>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <h2>Overview</h2>
+      <p>
+        Health outcomes are shaped by more than healthcare services alone. Economic capacity,
+        public health expenditure, education infrastructure, and healthcare workforce availability
+        can all influence whether countries are able to build sustainable and equitable health systems.
+        This project used Python to source, clean, combine, and analyse public datasets from a policy
+        analytics perspective.
+      </p>
+    </section>
+
+    <section class="project-section">
+      <h2>My Contribution</h2>
+      <p>
+        I contributed across the full project lifecycle, with a particular focus on Python-based
+        data wrangling and analysis for the first two research questions. I also proposed the limitation
+        and web scraping extension, which reframed the project from a static 2017 cross-country analysis
+        into a potential real-time monitoring solution.
+      </p>
+    </section>
+
+    <section class="project-section">
+      <h2>Problem Context</h2>
+      <p>
+        Public health and policy decision-makers often need to understand how health outcomes relate
+        to workforce capacity, education infrastructure, and economic conditions. However, these indicators
+        are usually stored across separate public datasets, making it difficult to analyse them together
+        without data sourcing, auditing, cleaning, and integration.
+      </p>
+    </section>
+
+    <section class="project-section">
+      <h2>Data Sources</h2>
+      <div class="source-grid">
+        <article class="source-card">
+          <h3>UNData Country Profiles</h3>
+          <p>Country-level demographic, economic, education, and health indicators.</p>
+        </article>
+
+        <article class="source-card">
+          <h3>WHO Global Health Workforce Statistics</h3>
+          <p>Medical doctors density and nursing/midwifery personnel density.</p>
+        </article>
+
+        <article class="source-card">
+          <h3>World University Rankings</h3>
+          <p>University count and student population indicators aggregated by country.</p>
+        </article>
+
+        <article class="source-card">
+          <h3>Worldometer</h3>
+          <p>Real-time health and government expenditure indicators for the web scraping extension.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <h2>Wrangling Workflow</h2>
+      <div class="workflow">
+        <span>Raw public datasets</span>
+        <span>Audit & column selection</span>
+        <span>Cleaning & type conversion</span>
+        <span>Country name standardisation</span>
+        <span>Missing value review</span>
+        <span>Dataset merging</span>
+        <span>Final country-level dataset</span>
+        <span>Analysis & visualisation</span>
+      </div>
+      <p>
+        The project required cleaning datasets with different structures, naming conventions, time periods,
+        and missing values. Key wrangling steps included filtering health workforce records, cleaning
+        country-level economic and education indicators, aggregating university-level data by country,
+        standardising country names, and merging datasets into a final country-level analytical table.
+      </p>
+    </section>
+
+    <section class="project-section">
+      <h2>Research Questions</h2>
+
+      <div class="question-list">
+        <article class="question-card">
+          <p class="question-label">Question 1</p>
+          <h3>How does medical staff density differ between regions, and how does it relate to health and lifespan?</h3>
+          <p>
+            The analysis explored whether countries and regions with higher medical staff density also
+            showed stronger life expectancy and lower infant mortality outcomes.
+          </p>
+        </article>
+
+        <article class="question-card">
+          <p class="question-label">Question 2</p>
+          <h3>What is the relationship between different types of medical staff density and economic indicators?</h3>
+          <p>
+            The analysis compared medical doctors, nurses, and midwives density with GDP per capita,
+            urban population, health expenditure, and related economic indicators.
+          </p>
+        </article>
+
+        <article class="question-card">
+          <p class="question-label">Question 3</p>
+          <h3>How does tertiary education differ across countries, and does it relate to medical staff density?</h3>
+          <p>
+            The analysis considered whether tertiary education enrolment and university infrastructure
+            were associated with healthcare workforce capacity.
+          </p>
+        </article>
+
+        <article class="question-card">
+          <p class="question-label">Question 4</p>
+          <h3>How could real-time public indicators support continuous monitoring of health and SDG progress?</h3>
+          <p>
+            This question could not be answered by the 2017 combined dataset alone, so a web scraping
+            extension was proposed to collect real-time indicators with timestamps.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <h2>Key Insights</h2>
+      <div class="insight-grid">
+        <article class="insight-card">
+          <h3>Healthcare workforce density was associated with better health outcomes.</h3>
+          <p>
+            Countries with higher medical staff density tended to show stronger life expectancy and
+            lower infant mortality, suggesting a relationship between workforce availability and health
+            system performance.
+          </p>
+        </article>
+
+        <article class="insight-card">
+          <h3>Economic capacity helped explain workforce differences.</h3>
+          <p>
+            GDP per capita, urbanisation, and health expenditure were relevant when comparing medical
+            workforce density across countries.
+          </p>
+        </article>
+
+        <article class="insight-card">
+          <h3>Tertiary education may support long-term workforce capacity.</h3>
+          <p>
+            Education infrastructure and tertiary enrolment provide a useful lens for understanding how
+            countries develop future healthcare professionals.
+          </p>
+        </article>
+
+        <article class="insight-card">
+          <h3>Static annual datasets are not enough for monitoring.</h3>
+          <p>
+            A single-year dataset can support cross-country comparison, but it cannot provide continuous
+            monitoring, anomaly detection, or timely escalation.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="project-section highlight-section">
+      <h2>Limitation & Web Scraping Extension</h2>
+      <p>
+        The combined dataset was useful for cross-country comparison, but it was limited to annual
+        2017 data. This prevented smaller time-interval analysis and continuous monitoring.
+      </p>
+      <p>
+        To address this limitation, the project proposed a web scraping extension using Worldometer
+        real-time statistics. The sample crawled data included indicator names, current values, and
+        timestamps for health and expenditure indicators. This created a proof-of-concept for ongoing
+        health and SDG monitoring.
+      </p>
+
+      <div class="sample-table">
+        <div class="table-row table-header">
+          <span>Indicator</span>
+          <span>Number</span>
+          <span>Timestamp</span>
+        </div>
+        <div class="table-row">
+          <span>Communicable disease deaths this year</span>
+          <span>11,727,355</span>
+          <span>2024-11-25 18:28</span>
+        </div>
+        <div class="table-row">
+          <span>Seasonal flu deaths this year</span>
+          <span>461,365</span>
+          <span>2024-11-25 18:28</span>
+        </div>
+        <div class="table-row">
+          <span>Public Education expenditure today</span>
+          <span>8,844,374,055</span>
+          <span>2024-11-25 18:28</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <h2>Policy Implications</h2>
+      <div class="recommendation-grid">
+        <article>
+          <h3>Promote equitable healthcare workforce distribution</h3>
+          <p>Address regional disparities in healthcare staffing and access.</p>
+        </article>
+
+        <article>
+          <h3>Align workforce planning with economic strategy</h3>
+          <p>Consider healthcare capacity alongside GDP, urbanisation, and public expenditure.</p>
+        </article>
+
+        <article>
+          <h3>Invest in tertiary education pathways</h3>
+          <p>Support long-term healthcare workforce development through stronger education systems.</p>
+        </article>
+
+        <article>
+          <h3>Build monitoring and escalation processes</h3>
+          <p>Use real-time indicators to detect emerging health risks and support timely intervention.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <h2>Tools Used</h2>
+      <div class="tool-tags">
+        <span>Python</span>
+        <span>pandas</span>
+        <span>NumPy</span>
+        <span>matplotlib</span>
+        <span>seaborn</span>
+        <span>scikit-learn</span>
+        <span>Selenium</span>
+        <span>Jupyter Notebook</span>
+        <span>Power BI</span>
+      </div>
+    </section>
+
+    <section class="project-section evidence-section">
+      <h2>Evidence</h2>
+      <p>
+        The webpage summarises the project for a business and policy audience. The original notebook and
+        presentation are available as supporting materials.
+      </p>
+      <div class="project-actions">
+        <a class="primary-button blue-button" href="/files/global-health-workforce-presentation.pdf">Download Presentation</a>
+        <a class="secondary-button" href="/files/global-health-workforce-notebook.ipynb">View Notebook</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
