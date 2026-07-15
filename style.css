@@ -727,3 +727,55 @@ h3 {
     padding: 10px;
   }
 }
+/* ===== Policy Implications Cards ===== */
+
+.recommendation-grid {
+  counter-reset: policy-counter;
+}
+
+.recommendation-grid article {
+  position: relative;
+  background: linear-gradient(180deg, #ffffff 0%, var(--blue-light) 100%);
+  border: 1px solid var(--blue-border);
+  border-radius: 26px;
+  padding: 34px 32px 32px;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.04);
+  overflow: hidden;
+}
+
+.recommendation-grid article::before {
+  counter-increment: policy-counter;
+  content: "0" counter(policy-counter);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 16px;
+  background: var(--blue);
+  color: white;
+  font-weight: 900;
+  margin-bottom: 22px;
+}
+
+.recommendation-grid article::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 130px;
+  height: 130px;
+  background: rgba(37, 99, 235, 0.08);
+  border-radius: 50%;
+}
+
+.recommendation-grid h3 {
+  font-size: 1.28rem;
+  line-height: 1.35;
+  margin-bottom: 18px;
+}
+
+.recommendation-grid p {
+  font-size: 1.03rem;
+  color: var(--muted);
+}
