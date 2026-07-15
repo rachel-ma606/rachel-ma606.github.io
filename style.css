@@ -643,3 +643,69 @@ h3 {
     align-items: flex-start;
   }
 }
+
+.section-intro {
+  max-width: 850px;
+  color: var(--muted);
+  font-size: 1.08rem;
+  margin-bottom: 28px;
+}
+
+.insight-story {
+  display: grid;
+  gap: 28px;
+}
+
+.insight-panel {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 30px;
+  align-items: center;
+  background: white;
+  border: 1px solid var(--blue-border);
+  border-radius: 28px;
+  padding: 34px;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.04);
+}
+
+.insight-copy h3 {
+  font-size: 1.55rem;
+  line-height: 1.25;
+  margin: 0 0 16px;
+}
+
+.insight-copy p {
+  color: var(--muted);
+}
+
+.insight-meaning {
+  background: var(--blue-light);
+  border-left: 4px solid var(--blue);
+  padding: 14px 16px;
+  border-radius: 12px;
+  margin-top: 18px;
+}
+
+.insight-visual {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 22px;
+  padding: 16px;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.insight-visual img {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .insight-panel {
+    grid-template-columns: 1fr;
+  }
+}
