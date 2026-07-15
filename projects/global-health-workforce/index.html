@@ -65,50 +65,79 @@
       </p>
     </section>
 
-    <section class="project-section">
-      <h2>Data Sources</h2>
-      <div class="source-grid">
-        <article class="source-card">
-          <h3>UNData Country Profiles</h3>
-          <p>Country-level demographic, economic, education, and health indicators.</p>
-        </article>
+<section class="project-section">
+  <div class="section-heading">
+    <p class="section-kicker">Data Foundation</p>
+    <h2>Data Sources</h2>
+    <p>
+      The project combined multiple public datasets to connect health workforce capacity,
+      country-level economic conditions, education infrastructure, and real-time monitoring indicators.
+    </p>
+  </div>
 
-        <article class="source-card">
-          <h3>WHO Global Health Workforce Statistics</h3>
-          <p>Medical doctors density and nursing/midwifery personnel density.</p>
-        </article>
-
-        <article class="source-card">
-          <h3>World University Rankings</h3>
-          <p>University count and student population indicators aggregated by country.</p>
-        </article>
-
-        <article class="source-card">
-          <h3>Worldometer</h3>
-          <p>Real-time health and government expenditure indicators for the web scraping extension.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="project-section">
-      <h2>Wrangling Workflow</h2>
-      <div class="workflow">
-        <span>Raw public datasets</span>
-        <span>Audit & column selection</span>
-        <span>Cleaning & type conversion</span>
-        <span>Country name standardisation</span>
-        <span>Missing value review</span>
-        <span>Dataset merging</span>
-        <span>Final country-level dataset</span>
-        <span>Analysis & visualisation</span>
-      </div>
+  <div class="source-grid">
+    <article class="source-card">
+      <span class="source-number">01</span>
+      <p class="source-type">Country Indicators</p>
+      <h3>UNData Country Profiles</h3>
       <p>
-        The project required cleaning datasets with different structures, naming conventions, time periods,
-        and missing values. Key wrangling steps included filtering health workforce records, cleaning
-        country-level economic and education indicators, aggregating university-level data by country,
-        standardising country names, and merging datasets into a final country-level analytical table.
+        Used for country-level demographic, economic, education, and health indicators,
+        including GDP per capita, population density, urbanisation, health expenditure,
+        and life expectancy.
       </p>
-    </section>
+    </article>
+
+    <article class="source-card">
+      <span class="source-number">02</span>
+      <p class="source-type">Health Workforce</p>
+      <h3>WHO Global Health Workforce Statistics</h3>
+      <p>
+        Used for medical doctors density and nursing/midwifery personnel density,
+        supporting analysis of healthcare workforce distribution across countries and regions.
+      </p>
+    </article>
+
+    <article class="source-card">
+      <span class="source-number">03</span>
+      <p class="source-type">Education Infrastructure</p>
+      <h3>World University Rankings</h3>
+      <p>
+        Used to derive university count and student population indicators by country,
+        helping assess whether tertiary education capacity relates to healthcare workforce development.
+      </p>
+    </article>
+
+    <article class="source-card">
+      <span class="source-number">04</span>
+      <p class="source-type">Real-Time Extension</p>
+      <h3>Worldometer</h3>
+      <p>
+        Used as a web scraping proof-of-concept for real-time health and government expenditure indicators,
+        extending the project beyond static 2017 annual data.
+      </p>
+    </article>
+  </div>
+</section>
+
+    <article class="workflow-step">
+      <span>04</span>
+      <h3>Merge Datasets</h3>
+      <p>Combined health workforce, economic, education, and country-level indicators into one analytical dataset.</p>
+    </article>
+
+    <article class="workflow-step">
+      <span>05</span>
+      <h3>Analyse Relationships</h3>
+      <p>Used correlation and regression analysis to explore workforce density, health outcomes, and economic factors.</p>
+    </article>
+
+    <article class="workflow-step">
+      <span>06</span>
+      <h3>Extend with Scraping</h3>
+      <p>Proposed real-time web scraping to overcome the limitation of static 2017 annual data.</p>
+    </article>
+  </div>
+</section>
 
     <section class="project-section">
       <h2>Research Questions</h2>
