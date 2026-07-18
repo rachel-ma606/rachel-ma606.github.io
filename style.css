@@ -779,3 +779,26 @@ h3 {
   font-size: 1.03rem;
   color: var(--muted);
 }
+
+
+/* ===== Poster Preview ===== */
+
+.poster-section {
+  padding-bottom: 70px;
+}
+
+.poster-preview {
+  background: white;
+  border: 1px solid var(--blue-border);
+  border-radius: 28px;
+  padding: 24px;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.04);
+  margin-top: 28px;
+}
+
+.poster-preview img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 18px;
+}
