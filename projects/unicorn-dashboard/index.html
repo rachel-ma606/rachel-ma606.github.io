@@ -1,1 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unicorn Startup Investment & Valuation Dashboard | Rui Ma</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
 
+<body>
+  <header class="site-header">
+    <div class="logo"><a href="/">Rui Ma</a></div>
+    <nav>
+      <a href="/#projects">Projects</a>
+      <a href="/#about">About</a>
+      <a href="/#contact">Contact</a>
+      <a class="resume-button" href="#">Resume</a>
+    </nav>
+  </header>
+
+  <main class="project-page">
+    <section class="project-hero">
+      <a class="back-link" href="/#projects">← Back to projects</a>
+      <p class="eyebrow">Power BI · R · Dashboard Design · Association Rules · Clustering</p>
+      <h1>Unicorn Startup Investment & Valuation Dashboard</h1>
+      <p class="project-subtitle">
+        An interactive Power BI dashboard supported by R-based association rule mining and clustering
+        to explore unicorn startup valuation, funding, investor networks, country patterns, and industry relationships.
+      </p>
+
+      <div class="project-actions">
+        <a class="primary-button" href="unicorn-dashboard.pbix" download>Download Power BI Dashboard</a>
+        <a class="secondary-button" href="https://github.com/rachel-ma606/rachel-ma606.github.io/blob/main/projects/unicorn-dashboard/unicorn-r-analysis.R" target="_blank">View R Code</a>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <h2>Project Overview</h2>
+      <p>
+        This project explored unicorn startup investment and valuation patterns through an interactive Power BI
+        dashboard, supported by R-based analytical techniques. The Power BI dashboard was designed to let users
+        dynamically explore startup characteristics, investor patterns, valuation, funding, country, and industry
+        relationships. R was used to extend the analysis beyond dashboard filtering by applying association rule
+        mining to investor relationships and k-means clustering to valuation and funding patterns.
+      </p>
+      <p>
+        The screenshot below shows the dashboard landing page. The full interactive .pbix file is available for download.
+      </p>
+    </section>
+
+    <section class="project-section dashboard-section">
+      <h2>Dashboard Preview</h2>
+      <p class="section-intro">
+        The Power BI dashboard was designed as an interactive exploration tool. Users can filter and click through
+        startup, investor, valuation, country, and industry views to understand patterns within the unicorn ecosystem.
+      </p>
+
+      <div class="dashboard-preview">
+        <img src="unicorn-dashboard-screenshot.png" alt="Power BI dashboard landing page for unicorn startup investment and valuation analysis" />
+      </div>
+
+      <div class="project-actions">
+        <a class="primary-button" href="unicorn-dashboard.pbix" download>Download Power BI Dashboard</a>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <h2>Analytical Workflow</h2>
+      <p class="section-intro">
+        The workflow combined interactive dashboard design with R-based analytical techniques to move beyond
+        descriptive filtering and identify deeper investment and valuation patterns.
+      </p>
+
+      <div class="workflow-visual">
+        <article class="workflow-step">
+          <span>01</span>
+          <h3>Prepare Dataset</h3>
+          <p>Cleaned and structured unicorn startup data for dashboard exploration and R-based analysis.</p>
+        </article>
+
+        <article class="workflow-step">
+          <span>02</span>
+          <h3>Build Power BI Dashboard</h3>
+          <p>Designed interactive views for valuation, funding, industry, country, and investor exploration.</p>
+        </article>
+
+        <article class="workflow-step">
+          <span>03</span>
+          <h3>Investor Association Analysis</h3>
+          <p>Used Apriori association learning in R to identify frequent investor combinations and co-investor relationships.</p>
+        </article>
+
+        <article class="workflow-step">
+          <span>04</span>
+          <h3>Startup Clustering</h3>
+          <p>Applied k-means clustering using valuation and VC raised to date to segment unicorn startups.</p>
+        </article>
+
+        <article class="workflow-step">
+          <span>05</span>
+          <h3>Cluster Validation</h3>
+          <p>Used silhouette scores to compare cluster numbers and support the choice of segmentation structure.</p>
+        </article>
+
+        <article class="workflow-step">
+          <span>06</span>
+          <h3>Insight Integration</h3>
+          <p>Connected R outputs with dashboard interpretation to explain investor patterns and startup segments.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <h2>Key Takeaways</h2>
+
+      <div class="recommendation-grid">
+        <article>
+          <h3>Dominant investors shaped the unicorn ecosystem</h3>
+          <p>
+            Association analysis identified frequent investors, including Accel, Andreessen Horowitz,
+            and Sequoia Capital, highlighting their strong presence in the dataset.
+          </p>
+        </article>
+
+        <article>
+          <h3>Investor partnerships were not random</h3>
+          <p>
+            Apriori rules highlighted co-investor relationships, including high-lift niche partnerships
+            such as Founders Fund and Khosla Ventures.
+          </p>
+        </article>
+
+        <article>
+          <h3>Unicorns formed distinct valuation and funding segments</h3>
+          <p>
+            K-means clustering separated startups into a large mainstream group, a smaller high-funding group,
+            and a small outlier group with extremely high valuations.
+          </p>
+        </article>
+
+        <article>
+          <h3>R extended the dashboard beyond descriptive analysis</h3>
+          <p>
+            Power BI supported dynamic exploration, while R added association learning and clustering to uncover
+            deeper investor and valuation patterns.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <h2>Tools Used</h2>
+      <div class="tool-tags">
+        <span>Power BI</span>
+        <span>R</span>
+        <span>arules</span>
+        <span>arulesViz</span>
+        <span>ggplot2</span>
+        <span>cluster</span>
+        <span>GGally</span>
+        <span>readxl</span>
+        <span>Apriori Algorithm</span>
+        <span>k-means Clustering</span>
+      </div>
+    </section>
+
+    <section class="project-section evidence-section">
+      <h2>Evidence</h2>
+      <p>
+        The webpage summarises the project for a business analytics audience. The interactive Power BI dashboard
+        and R analysis code are available as supporting materials.
+      </p>
+
+      <div class="project-actions">
+        <a class="primary-button" href="unicorn-dashboard.pbix" download>Download Power BI Dashboard</a>
+        <a class="secondary-button" href="https://github.com/rachel-ma606/rachel-ma606.github.io/blob/main/projects/unicorn-dashboard/unicorn-r-analysis.R" target="_blank">View R Code</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
