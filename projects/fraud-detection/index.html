@@ -1,1 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fraud Detection & Customer Risk Response Model | Rui Ma</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
 
+<body>
+  <header class="site-header">
+    <div class="logo"><a href="/">Rui Ma</a></div>
+    <nav>
+      <a href="/#projects">Projects</a>
+      <a href="/#about">About</a>
+      <a href="/#contact">Contact</a>
+      <a class="resume-button" href="#">Resume</a>
+    </nav>
+  </header>
+
+  <main class="project-page">
+    <section class="project-hero">
+      <a class="back-link" href="/#projects">← Back to projects</a>
+      <p class="eyebrow">R · Fraud Analytics · XGBoost · SMOTE · Risk Management</p>
+      <h1>Fraud Detection & Customer Risk Response Model</h1>
+      <p class="project-subtitle">
+        An R-based classification project using SMOTE and XGBoost to identify fraudulent banking
+        transactions while balancing detection performance, false alarms, and customer impact.
+      </p>
+
+      <div class="project-actions">
+        <a class="primary-button" href="fraud-detection-poster.pdf" download>Download Poster</a>
+        <a class="secondary-button" href="https://github.com/rachel-ma606/rachel-ma606.github.io/blob/main/projects/fraud-detection/fraud-detection-code.qmd" target="_blank">View R Code</a>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <h2>Project Overview</h2>
+      <p>
+        This project addressed a fraud detection challenge in a banking context, where the goal was to
+        identify potentially fraudulent transactions while reducing false alarms that could inconvenience
+        genuine customers. The dataset contained 500,000 synthetically generated transactions from 10,000
+        customers, with only 2.2% labelled as fraudulent, creating a highly imbalanced classification problem.
+      </p>
+      <p>
+        My group used R to clean and engineer transaction-level features, compare multiple classification
+        models, apply SMOTE to address class imbalance, and select XGBoost as the final model based on a
+        weighted metric balancing sensitivity and specificity. The final poster received a Best Visual Award.
+      </p>
+    </section>
+
+    <section class="project-section">
+      <h2>Modelling Workflow</h2>
+      <p class="section-intro">
+        The modelling process was designed to balance predictive performance with practical fraud response,
+        recognising that both missed fraud and excessive false alarms have business consequences.
+      </p>
+
+      <div class="workflow-visual">
+        <article class="workflow-step">
+          <span>01</span>
+          <h3>Data Cleaning</h3>
+          <p>Extracted transaction hour, grouped transaction channels, and prepared fraud labels and categorical fields.</p>
+        </article>
+
+        <article class="workflow-step">
+          <span>02</span>
+          <h3>Feature Engineering</h3>
+          <p>Selected predictors including age, transaction hour, transaction type, and transaction amount category.</p>
+        </article>
+
+        <article class="workflow-step">
+          <span>03</span>
+          <h3>Train/Test Split</h3>
+          <p>Split the transaction data into training and testing sets with stratification on the fraud label.</p>
+        </article>
+
+        <article class="workflow-step">
+          <span>04</span>
+          <h3>SMOTE Resampling</h3>
+          <p>Applied SMOTE to address the strong class imbalance between genuine and fraudulent transactions.</p>
+        </article>
+
+        <article class="workflow-step">
+          <span>05</span>
+          <h3>Model Comparison</h3>
+          <p>Compared candidate classification models using sensitivity, specificity, and business-weighted performance.</p>
+        </article>
+
+        <article class="workflow-step">
+          <span>06</span>
+          <h3>XGBoost Selection</h3>
+          <p>Selected XGBoost as the final model based on its ability to balance fraud detection and false alarm control.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="project-section poster-section">
+      <h2>Poster Preview</h2>
+      <p class="section-intro">
+        The poster summarises the business challenge, modelling approach, key predictors, model results,
+        and customer-focused fraud prevention recommendations.
+      </p>
+
+      <div class="poster-preview">
+        <img src="fraud-detection-poster.png" alt="Fraud detection project poster showing modelling workflow, results, and recommendations" />
+      </div>
+
+      <div class="project-actions">
+        <a class="primary-button" href="fraud-detection-poster.pdf" download>Download Poster</a>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <h2>Key Takeaways</h2>
+
+      <div class="recommendation-grid">
+        <article>
+          <h3>Accuracy alone was not enough</h3>
+          <p>
+            Since fraudulent transactions represented only 2.2% of the dataset, the model needed to balance
+            sensitivity with specificity rather than simply maximise overall accuracy.
+          </p>
+        </article>
+
+        <article>
+          <h3>Transaction timing and type mattered</h3>
+          <p>
+            Fraud patterns were linked to transaction timing and type, with the poster identifying 4 AM as a
+            key fraud concentration point and withdrawal as an important predictor after excluding age.
+          </p>
+        </article>
+
+        <article>
+          <h3>Model design considered customer impact</h3>
+          <p>
+            The weighted metric reflected a business trade-off: detecting actual fraud while limiting false
+            alarms that could disrupt genuine customers.
+          </p>
+        </article>
+
+        <article>
+          <h3>Recommendations translated analytics into action</h3>
+          <p>
+            The project recommended targeted two-factor authentication, fraud trend alerts, internal monitoring,
+            and custom transaction limits.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <h2>Tools Used</h2>
+      <div class="tool-tags">
+        <span>R</span>
+        <span>Quarto</span>
+        <span>XGBoost</span>
+        <span>LightGBM</span>
+        <span>Logistic Regression</span>
+        <span>SMOTE</span>
+        <span>dplyr</span>
+        <span>ggplot2</span>
+        <span>Classification Metrics</span>
+      </div>
+    </section>
+
+    <section class="project-section evidence-section">
+      <h2>Evidence</h2>
+      <p>
+        The webpage summarises the project for a business analytics audience. The original poster and R code
+        are available as supporting materials.
+      </p>
+
+      <div class="project-actions">
+        <a class="primary-button" href="fraud-detection-poster.pdf" download>Download Poster</a>
+        <a class="secondary-button" href="https://github.com/rachel-ma606/rachel-ma606.github.io/blob/main/projects/fraud-detection/fraud-detection-code.qmd" target="_blank">View R Code</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
