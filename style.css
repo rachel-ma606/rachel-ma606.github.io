@@ -793,7 +793,8 @@ h3 {
   border-radius: 28px;
   padding: 24px;
   box-shadow: 0 14px 30px rgba(15, 23, 42, 0.04);
-  margin-top: 28px;
+  margin: 28px auto 0;
+  max-width: 980px;
 }
 
 .poster-preview img {
