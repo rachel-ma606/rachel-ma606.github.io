@@ -1,1 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AdventureWorks Product Performance Data Warehouse | Rui Ma</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
 
+<body>
+  <header class="site-header">
+    <div class="logo"><a href="/">Rui Ma</a></div>
+    <nav>
+      <a href="/#projects">Projects</a>
+      <a href="/#about">About</a>
+      <a href="/#contact">Contact</a>
+      <a class="resume-button" href="#">Resume</a>
+    </nav>
+  </header>
+
+  <main class="project-page">
+    <section class="project-hero">
+      <a class="back-link" href="/#projects">← Back to projects</a>
+      <p class="eyebrow">SQL Server · SSIS · SSAS · Star Schema · OLAP · Product Profitability</p>
+      <h1>AdventureWorks Product Performance Data Warehouse</h1>
+      <p class="project-subtitle">
+        A SQL Server BI project using star schema design, SSIS ETL, SSAS cube modelling,
+        and Excel OLAP analysis to explore product sales, cost, revenue, and profitability.
+      </p>
+    </section>
+
+    <section class="project-section">
+      <h2>Project Overview</h2>
+      <p>
+        This project analysed product performance in the AdventureWorks2012 database by building
+        a structured BI pipeline rather than relying on ad hoc queries alone. The group designed
+        a star schema with a central sales fact table and product, time, location, and sales order
+        dimensions, then used SSIS transformations to prepare the dimension and fact tables.
+      </p>
+      <p>
+        The resulting SSAS cube enabled multidimensional analysis of revenue, cost, profit,
+        quantity sold, sales channel, geography, product hierarchy, and time. The goal was to
+        support product performance analysis across online and in-store channels, identify
+        profitable and loss-making product categories, and translate cube-based analysis into
+        sales and marketing recommendations.
+      </p>
+    </section>
+
+    <section class="project-section">
+      <h2>BI Workflow</h2>
+      <p class="section-intro">
+        The project followed a full business intelligence workflow, moving from source data
+        modelling to ETL, cube creation, and business-facing analysis.
+      </p>
+
+      <div class="workflow-visual">
+        <article class="workflow-step">
+          <span>01</span>
+          <h3>Define Business Questions</h3>
+          <p>
+            Focused the analysis on product popularity, profitability, sales channels,
+            promotion opportunities, and offline performance by country and month.
+          </p>
+        </article>
+
+        <article class="workflow-step">
+          <span>02</span>
+          <h3>Design Star Schema</h3>
+          <p>
+            Structured the warehouse around a central sales fact table linked to product,
+            time, location, and sales order dimensions.
+          </p>
+        </article>
+
+        <article class="workflow-step">
+          <span>03</span>
+          <h3>Build SSIS Transformations</h3>
+          <p>
+            Prepared dimension and fact tables, handled missing values, transformed coded
+            fields into readable labels, and calculated revenue, cost, and profit fields.
+          </p>
+        </article>
+
+        <article class="workflow-step">
+          <span>04</span>
+          <h3>Create SSAS Cube</h3>
+          <p>
+            Built a multidimensional cube with measures such as revenue, cost, profit,
+            quantity sold, revenue percentage, and cost percentage.
+          </p>
+        </article>
+
+        <article class="workflow-step">
+          <span>05</span>
+          <h3>Analyse Cube in Excel</h3>
+          <p>
+            Used Excel PivotTables to browse the cube and compare product performance
+            across channel, time, geography, and product hierarchy.
+          </p>
+        </article>
+
+        <article class="workflow-step">
+          <span>06</span>
+          <h3>Translate Findings</h3>
+          <p>
+            Converted cube outputs into product, channel, and promotion recommendations
+            for sales and marketing decision-making.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <h2>Business Questions</h2>
+
+      <div class="question-list">
+        <article class="question-card">
+          <p class="question-label">Question 1</p>
+          <h3>Which products are most or least popular in-store and online?</h3>
+          <p>
+            The cube was used to compare product popularity by quantity sold and examine how
+            sales volume related to revenue and cost across different sales channels.
+          </p>
+        </article>
+
+        <article class="question-card">
+          <p class="question-label">Question 2</p>
+          <h3>Which products are most or least profitable in-store and online?</h3>
+          <p>
+            Profit, revenue, and cost measures were compared to identify products where high
+            revenue did not necessarily translate into strong profitability.
+          </p>
+        </article>
+
+        <article class="question-card">
+          <p class="question-label">Question 3</p>
+          <h3>Which products should be targeted with sales and marketing promotions?</h3>
+          <p>
+            The analysis compared profitability by product and channel to recommend where
+            promotions could create the strongest business value.
+          </p>
+        </article>
+
+        <article class="question-card">
+          <p class="question-label">Question 4</p>
+          <h3>How do offline products perform across countries and months?</h3>
+          <p>
+            The cube was used to explore country-level and month-level patterns in offline
+            profitability across product categories.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <h2>Key Outcomes</h2>
+
+      <div class="recommendation-grid">
+        <article>
+          <h3>Popularity did not always mean profitability</h3>
+          <p>
+            Some high-volume in-store products generated strong revenue but also carried high
+            costs, reducing or reversing profit outcomes.
+          </p>
+        </article>
+
+        <article>
+          <h3>Online sales showed stronger profitability</h3>
+          <p>
+            Online products generally had better cost control, meaning profitable product lines
+            performed more effectively through online channels.
+          </p>
+        </article>
+
+        <article>
+          <h3>Promotion focus should consider channel performance</h3>
+          <p>
+            The analysis supported online promotions for Mountain Bikes, Road Bikes, and
+            Touring Bikes, while recommending caution for loss-making in-store products.
+          </p>
+        </article>
+
+        <article>
+          <h3>Offline performance varied by country and category</h3>
+          <p>
+            Canada showed stronger in-store profitability, while Components and Accessories
+            were more consistently profitable across countries than Bikes.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <h2>Tools Used</h2>
+      <div class="tool-tags">
+        <span>SQL Server</span>
+        <span>SSIS</span>
+        <span>SSAS</span>
+        <span>AdventureWorks2012</span>
+        <span>Star Schema</span>
+        <span>Fact Table</span>
+        <span>Dimension Tables</span>
+        <span>OLAP Cube</span>
+        <span>Excel PivotTables</span>
+        <span>Product Profitability Analysis</span>
+      </div>
+    </section>
+
+    <section class="project-section evidence-section">
+      <h2>Evidence</h2>
+      <p>
+        This webpage provides a business-facing summary of the project. Technical report,
+        SSIS/SSAS source files, cube structure, and Excel analysis screenshots are available
+        on request.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
