@@ -825,3 +825,118 @@ h3 {
   display: block;
   border-radius: 18px;
 }
+/* ===== Tours Direct Case Study ===== */
+
+.company-context-card {
+  margin-top: 32px;
+  background: linear-gradient(180deg, #ffffff 0%, var(--blue-light) 100%);
+  border: 1px solid var(--blue-border);
+  border-radius: 26px;
+  padding: 30px;
+  max-width: 900px;
+}
+
+.company-context-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 12px;
+}
+
+.company-context-card p {
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.evidence-note {
+  margin-top: 28px;
+  color: var(--muted);
+  background: var(--blue-light);
+  border-left: 4px solid var(--blue);
+  border-radius: 14px;
+  padding: 16px 18px;
+}
+
+.slide-section {
+  padding-bottom: 70px;
+}
+
+.slide-gallery {
+  display: grid;
+  gap: 34px;
+  margin-top: 32px;
+}
+
+.slide-card {
+  background: white;
+  border: 1px solid var(--blue-border);
+  border-radius: 28px;
+  padding: 24px;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.04);
+}
+
+.slide-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 18px;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 22px;
+}
+
+.slide-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 10px;
+}
+
+.slide-card p {
+  color: var(--muted);
+}
+
+.impact-section {
+  background: linear-gradient(180deg, transparent 0%, var(--blue-light) 100%);
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.metric-grid article {
+  background: white;
+  border: 1px solid var(--blue-border);
+  border-radius: 24px;
+  padding: 28px 24px;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.04);
+}
+
+.metric-grid strong {
+  display: block;
+  font-size: 2rem;
+  line-height: 1.1;
+  color: var(--blue);
+  margin-bottom: 14px;
+}
+
+.metric-grid span {
+  display: block;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 1000px) {
+  .metric-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .metric-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .slide-card {
+    padding: 16px;
+  }
+}
