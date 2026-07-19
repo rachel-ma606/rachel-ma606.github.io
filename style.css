@@ -103,7 +103,7 @@ nav a:hover {
 /* ===== Shared Layout ===== */
 
 main {
-  width: min(1240px, 92%);
+  width: min(1320px, 94%);
   margin: 0 auto;
 }
 
@@ -119,8 +119,8 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(3.2rem, 7vw, 6rem);
-  line-height: 0.98;
+  font-size: clamp(3rem, 6vw, 5.4rem);
+  line-height: 1;
   margin: 18px 0 26px;
   letter-spacing: -0.06em;
 }
@@ -179,19 +179,20 @@ h3 {
 /* ===== Homepage Hero ===== */
 
 .hero {
-  padding: 96px 0 56px;
+  padding: 82px 0 52px;
   max-width: 100%;
 }
 
 .hero h1 {
   max-width: 1240px;
-  font-size: clamp(2.8rem, 5.2vw, 4.6rem);
-  line-height: 1.02;
+  font-size: clamp(2.9rem, 5.2vw, 4.75rem);
+  line-height: 1.03;
 }
+
 .hero-text {
   font-size: 1.2rem;
   color: var(--muted);
-  max-width: 850px;
+  max-width: 1180px;
 }
 
 .hero-actions {
@@ -238,7 +239,7 @@ h3 {
 }
 
 .section > p {
-  max-width: 980px;
+  max-width: 1180px;
   color: var(--muted);
   font-size: 1.12rem;
 }
@@ -326,7 +327,7 @@ h3 {
 /* ===== Contact ===== */
 
 .contact p {
-  max-width: 980px;
+  max-width: 1180px;
 }
 
 .contact a {
@@ -877,7 +878,7 @@ h3 {
   }
 
   .hero {
-    padding-top: 80px;
+    padding-top: 74px;
   }
 
   .project-hero {
@@ -933,7 +934,11 @@ h3 {
   }
 
   .hero {
-    padding: 70px 0 48px;
+    padding: 64px 0 46px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.75rem, 12vw, 4rem);
   }
 
   .project-hero h1 {
