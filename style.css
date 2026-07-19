@@ -940,3 +940,45 @@ h3 {
     padding: 16px;
   }
 }
+/* ===== About / Core Capabilities ===== */
+
+.capability-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 36px;
+}
+
+.capability-grid article {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 26px;
+  padding: 32px;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.03);
+}
+
+.capability-grid h3 {
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+}
+
+.capability-grid p {
+  color: var(--muted);
+}
+
+/* ===== Featured Real Client Work ===== */
+
+.featured-work-card {
+  background: linear-gradient(180deg, #ffffff 0%, var(--blue-light) 100%);
+  border-color: var(--blue-border);
+}
+
+.featured-work-card .project-type {
+  color: var(--blue);
+}
+
+@media (max-width: 900px) {
+  .capability-grid {
+    grid-template-columns: 1fr;
+  }
+}
